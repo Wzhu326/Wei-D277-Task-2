@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page-New York State</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header class="nys-header">
+        <h1>Welcome to New York State</h1>
+    </header>
+    <nav class="nys-nav">
+    <a href="../index.html">Home</a>
+    <a href="front-end-task-albany.html">Albany</a>
+    <a href="front-end-task-nyc.html">New York City</a>
+    <a href="pages/front-end-task-sleepy.html">Sleepy Hollow</a>
+    <a href="../index.html">COMING SOON</a>
+    <a href="front-end-task-form.html">Inquiries</a>
+    </nav>
+    
+    <div>
+      <div class="form-container">
+        <h2 class="form-title">Contact Us</h2>
+        <form action="process_form.php" method="post">
+            <div class="form-group">
+                <label for="first name">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter First Name Here" required>
+            </div>
+            <div class="form-group">
+                <label for="last name">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name Here" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email Address Here" required>
+            </div>
+            <div class="form-group">
+                <label for="verify-email">Verify Email Address:</label>
+                <input type="email" name="verify-email" id="verify-email" placeholder="Re-Enter Email Address Here" required>
+            </div>
+            <div class="form-question">
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" placeholder="Input Your Question Here" required></textarea>
+            </div>
+            <div class="form-button">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <footer class="nys-footer">
+        &copy; 2023 by Wei
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var emailField = document.getElementById('email');
+        var verifyEmailField = document.getElementById('verify-email');
+        var form = document.querySelector('form');
+    
+        form.addEventListener('submit', function (event) {
+          var emailValue = emailField.value.trim();
+          var verifyEmailValue = verifyEmailField.value.trim();
+    
+          if (emailValue !== verifyEmailValue) {
+            event.preventDefault();
+            alert('Email addresses do not match. Please check and try again.');
+            return false;
+          }
+        });
+      });
+    </script>
+</body>
+</html>

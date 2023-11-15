@@ -1,0 +1,294 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+}
+.nys-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.albany-header {
+  background-color: #a31c1c;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.nyc-header{
+  background-color: rgb(15, 6, 150);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.sleepy-header{
+  background-color: rgb(20, 88, 2);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.nys-nav {
+  background-color: #444;
+  width: 7.7%;
+  min-width: 100px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  overflow: auto;
+  top: 110px; 
+  left: 0;
+  font-weight: 550;
+}
+.albany-nav{
+  background-color: #cf4646;
+  width: 7.7%;
+  min-width: 100px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  overflow: auto;
+  top: 110px; 
+  left: 0;
+  font-weight: 550;
+}
+.nyc-nav{
+  background-color: rgba(58, 60, 184, 0.849);
+  width: 7.7%;
+  min-width: 100px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  overflow: auto;
+  top: 110px; 
+  left: 0;
+  font-weight: 550;
+}
+.sleepy-nav{
+  background-color: rgba(12, 143, 29, 0.849);
+  width: 7.7%;
+  min-width: 100px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  overflow: auto;
+  top: 110px; 
+  left: 0;
+  font-weight: 550;
+}
+.nys-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.25em 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.albany-footer{
+  background-color: #a31c1c;
+  color: white;
+  text-align: center;
+  padding: 0.25em 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.nyc-footer{
+  background-color: rgb(15, 6, 150);
+  color: white;
+  text-align: center;
+  padding: 0.25em 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.sleepy-footer{
+  background-color:rgb(20, 88, 2);
+  color: white;
+  text-align: center;
+  padding: 0.25em 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+nav a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+section {
+  max-width: 800px;
+  padding: 20px;
+  margin-left: 10%; 
+  margin-top: 90px; 
+  box-sizing: border-box;
+  overflow-x: hidden;
+  line-height: 1.3em;
+}
+.state-intro{
+  float: left;
+  width: 40%;
+  display: inline;
+  position: relative;
+}
+#nys-map-container{
+  margin-left: 180px;
+  margin-top: 180px;
+  position: absolute;
+}
+.nys-map{
+  width: 500px;
+  height: auto;
+}
+.note-1{
+  margin-top: 150px ;
+  margin-left: 200px;
+  font-size: smaller;
+  position: absolute;
+}
+.city-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 7.7%;
+  text-align: center;
+  grid-gap: 5px;
+  margin-top: -10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  margin-top: 180px;
+
+}
+.nyc{
+  background-image:url(../css/nyc-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.5s;
+}
+.albany{
+  background-image: url(../css/albany-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.5s;
+}
+.sleepy-hollows{
+  background-image: url(../css/sleep-hollows-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.5s;
+}
+.ithaca{
+  background-image: url(../css/ithaca-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.5s;
+}
+
+.city-container a{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 10px 20px;
+  color: black;
+  margin: 5px;
+  margin-bottom: -20px;
+}
+.city-container aside{
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  padding: 50PX;
+  font-weight: bold;
+
+}
+.albany:hover{
+  background-size: 110%;
+}
+.nyc:hover{
+  background-size: 110%;
+}
+.sleepy-hollows:hover{
+  background-size: 110%;
+}
+.ithaca:hover{
+  background-size: 110%;
+}
+a:active{
+  color: red;
+}
+.segments{
+  display: flex;
+  flex-wrap: wrap;}
+
+.city-info{
+  flex: 1;
+}
+.city-images{
+  flex: 1;
+}
+.gallery-img{
+  height: 250px;
+  width: 500PX;
+}
+.form-container{
+  margin-top: 150px;
+  margin-left: 200px;
+  position: relative;
+}
+.form-group{
+position: relative;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.form-question{
+position: relative;
+margin-top: 50px;
+}
+#question{
+  width: 500px;
+  height: 200px;
+}
+.form-button{
+  position: relative;
+}
+.button:hover{
+  cursor: pointer;
+}
+label{
+  display: block;
+  font-weight: 550;
+}
+input[type="email"]{
+width: 300px;
+}
